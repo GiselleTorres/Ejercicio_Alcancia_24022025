@@ -4,127 +4,159 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 20;
-        int b = 50;
-        int c = 100;
-        int d = 200;
-        int e = 500;
-        int x=0, f=0, g=0, h = 0, i = 0, j = 0, k = 0, l = 0, m = 0, n = 0, o = 0, p = 0, q = 0;
+        int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0;
+        int t=0,u=0,v=0,w=0,x=0,y=0,z=0;
         do {
-            System.out.println("Holaa! soy tu marranito, por favor selecciona " +
-                    "la opcion que deseas realizar en el siguiente menu ");
-            System.out.println("*********************************************");
-            System.out.println("* 1.Agregar una moneda                      *");
-            System.out.println("* 2.Saber cuantas monedas tengo de cada una *");
-            System.out.println("* 3.Calcular el total ahorrado              *");
-            System.out.println("* 4.Vaciar el contenido                     *");
-            System.out.println("*********************************************");
-
+            System.out.println("Bienvenido al puesto de votacion de nuestro municipio PREMIER");
+            System.out.println("A continuacion te presentamos las opciones que puedes elegir");
+            System.out.println("*******************************************************");
+            System.out.println("* 1.Registrar voto a un candidato                     *");
+            System.out.println("* 2.Calcular el costo de la campaña de cada candidato *");
+            System.out.println("* 3.Vaciar urnas de votacion                          *");
+            System.out.println("* 4.Calcular numero total de votos                    *");
+            System.out.println("* 5.Porcentaje de votos obtenidos por cada candidato  *");
+            System.out.println("* 6.Costo promedio de las campañas                    *");
+            System.out.println("*******************************************************");
 
             Scanner teclado = new Scanner(System.in);
-            x = teclado.nextInt();
-            switch (x) {
+            a= teclado.nextInt();
+            switch (a) {
                 case 1:
-                    System.out.println("*******************************************************");
-                    System.out.println("* Solo podemos ingresar las siguientes denominaciones *");
-                    System.out.println("* 1.$20                                               *");
-                    System.out.println("* 2.$50                                               *");
-                    System.out.println("* 3.$100                                              *");
-                    System.out.println("* 4.$200                                              *");
-                    System.out.println("* 5.$500                                              *");
-                    System.out.println("*******************************************************");
-                    f = teclado.nextInt();
-                    switch (f) {
+                    System.out.println("*****************************************");
+                    System.out.println("* Escoge por cual candidato vas a votar *");
+                    System.out.println("* 1.Candidato 1                         *");
+                    System.out.println("* 2.Candidato 2                         *");
+                    System.out.println("* 3.Candidato 3                         *");
+                    System.out.println("*****************************************");
+                    b = teclado.nextInt();
+                    switch (b) {
                         case 1:
-                            System.out.println("Usted eligio la moneda de " + a);
-                            System.out.println("Ahora dime cuantas monedas de esta denominacion vas a " +
-                                    "ingresar");
-                            h = teclado.nextInt();
-
-                            i = a * h;
-                            System.out.println("usted ingreso " + g + " monedas de" + a);
-                            System.out.println("Las cuales suman " + "$" + i);
+                            System.out.println("*********************************************************");
+                            System.out.println("* Escoge la opcion por la cual fue influenciado tu voto *");
+                            System.out.println("* 1.Internet                                            *");
+                            System.out.println("* 2.Radio                                               *");
+                            System.out.println("* 3.Television                                          *");
+                            System.out.println("*********************************************************");
+                            c = teclado.nextInt();
+                            switch (c) {
+                                case 1:
+                                    d++;
+                                    break;
+                                case 2:
+                                    e++;
+                                    break;
+                                case 3:
+                                    f++;
+                                    break;
+                            }
                             break;
                         case 2:
-                            System.out.println("Usted eligio la moneda de " + b);
-                            System.out.println("Ahora dime cuanta monedas de esta denominacion vas a " +
-                                    "ingresar");
-                            j = teclado.nextInt();
-
-                            k = b * j;
-                            System.out.println("usted ingreso " + g + "monedas de" + b);
-                            System.out.println("Las cuales suman " + "$" + k);
+                            System.out.println("*********************************************************");
+                            System.out.println("* Escoge la opcion por la cual fue influenciado tu voto *");
+                            System.out.println("* 1.Internet                                            *");
+                            System.out.println("* 2.Radio                                               *");
+                            System.out.println("* 3.Television                                          *");
+                            System.out.println("*********************************************************");
+                            g = teclado.nextInt();
+                            switch (g) {
+                                case 1:
+                                    h++;
+                                    break;
+                                case 2:
+                                    i++;
+                                    break;
+                                case 3:
+                                    j++;
+                                    break;
+                            }
                             break;
                         case 3:
-                            System.out.println("Usted eligio la moneda de " + c);
-                            System.out.println("Ahora dime cuanta monedas de esta denominacion vas a " +
-                                    "ingresar");
-                            l = teclado.nextInt();
-
-                            m = c * l;
-                            System.out.println("usted ingreso " + g + "monedas de" + c);
-                            System.out.println("Las cuales suman " + "$" + m);
-                            break;
-                        case 4:
-                            System.out.println("Usted eligio la moneda de " + d);
-                            System.out.println("Ahora dime cuanta monedas de esta denominacion vas a " +
-                                    "ingresar");
-                            n= teclado.nextInt();
-
-                            o = d *n;
-                            System.out.println("usted ingreso " + g + "monedas de" + d);
-                            System.out.println("Las cuales suman " + "$" + o);
-                            break;
-                        case 5:
-                            System.out.println("Usted eligio la moneda de " + e);
-                            System.out.println("Ahora dime cuanta monedas de esta denominacion vas a " +
-                                    "ingresar");
-                            p = teclado.nextInt();
-
-                            q = e * p;
-                            System.out.println("usted ingreso " + p + "monedas de" + e);
-                            System.out.println("Las cuales suman " + "$" + q);
+                            System.out.println("*********************************************************");
+                            System.out.println("* Escoge la opcion por la cual fue influenciado tu voto *");
+                            System.out.println("* 1.Internet                                            *");
+                            System.out.println("* 2.Radio                                               *");
+                            System.out.println("* 3.Television                                          *");
+                            System.out.println("*********************************************************");
+                            k = teclado.nextInt();
+                            switch (k) {
+                                case 1:
+                                    l++;
+                                    break;
+                                case 2:
+                                    m++;
+                                    break;
+                                case 3:
+                                    n++;
+                                    break;
+                            }
                             break;
                     }
                     break;
                 case 2:
-                    System.out.println("tienes "+ h + " monedas de " + a);
-                    System.out.println("tienes "+ j + " monedas de " + b);
-                    System.out.println("tienes "+ l + " monedas de " + c);
-                    System.out.println("tienes "+ n + " monedas de " + d);
-                    System.out.println("tienes "+ p + " monedas de " + e);
+                    //Candidato 1
+                    o=(d*700000)+(e*200000)+(f*600000);
+                    System.out.println("La campaña de candidato numero 1 valio : $"+ o);
+
+                    //Candidato 2
+                    p=(h*700000)+(i*200000)+(j*600000);
+                    System.out.println("La campaña de candidato numero 2 valio : $"+ p);
+
+                    //Candidato 3
+                    q=(l*700000)+(m*200000)+(n*600000);
+                    System.out.println("La campaña de candidato numero 3 valio : $"+ q);
                     break;
                 case 3:
-                    int r=0;
-                    r=i+k+m+o+q;
-                    System.out.println("tienes "+ r + " ahorrados en tu marranito");
-
+                    a=0; b=0; c=0; d=0; e=0; f=0; g=0; h=0; i=0; j=0; k=0; l=0; m=0; n=0;
+                    o=0; p=0; q=0; r=0; s=0; t=0; u=0; v=0; w=0; x=0; y=0; z=0;
+                    System.out.println("Se reiniciaron los votos");
                     break;
                 case 4:
-                    x=0;
-                    f=0;
-                    g=0;
-                    h = 0;
-                    i = 0;
-                    j = 0;
-                    k = 0;
-                    l = 0;
-                    m = 0;
-                    n = 0;
-                    o = 0;
-                    p = 0;
-                    q = 0;
+                    r=d+e+f+h+i+j+l+m+n;
+                    System.out.println("El numero total de votos es de: "+ r);
+                    break;
+                case 5:
+                    r=d+e+f+h+i+j+l+m+n;
+                    //candidato 1
+                    s=((d+e+f)/r)*100;
+                    System.out.print("El porcentaje de votos del candidato 1 es: " + s+"%");
+                    //candidato 1
+                    t=((j+i+h)/r)*100;
+                    System.out.print("El porcentaje de votos del candidato 2 es: " + t+"%");
+                    //candidato 1
+                    u=((l+m+n)/r)*100;
+                    System.out.print("El porcentaje de votos del candidato 3 es: " + u+"%");
+                    break;
+                case 6:
                     break;
             }
-        }while (x!=5);
+        }while (a!=5);
     }
 }
-//En una alcancía es posible guardar monedas de las siguientes denominaciones: $20, $50, $100,
-// $200 y $500, no se guardan ni billetes ni monedas de otras denominaciones. Al dueño de la
-// alcancía le parece muy útil conocer cuánto tiene en la alcancía sin necesidad de romperla,
-// es más, él quiere conocer cuántas monedas tiene en cada denominación para así romper la
-// alcancía sólo cuando quiera disponer de todo su dinero ahorrado.
-//Se quiere un programa que ilustre el manejo de la alcancía.
-// El programa debe permitir (1) agregar una moneda de una de las denominaciones indicadas,
-// (2) contar cuántas monedas tiene de cada denominación, (3) calcular el total de dinero
-// ahorrado, (4) romper la alcancía vaciando su contenido
+
+/*Desarrollar un software que permita escoger el representante del municipio “Premier”.
+ Para tal cargo se han postulado tres candidatos, los cuales han realizado una intensa
+ campaña publicitaria utilizando los principales medios de comunicación (Internet, radio,
+ y televisión). Se desea conocer el costo de la campaña calculando el retorno de la inversión
+ realizada en publicidad. Para esto, se determinaron los siguientes valores dependiendo del
+ medio que influenció al votante:
+
+
+•	Voto influenciado por publicidad en Internet: $700000
+•	Voto influenciado por publicidad en radio: $200000
+•	Voto influenciado por publicidad en televisión: $600000
+
+Lo anterior quiere decir que, por cada voto que reciba un candidato influenciado por
+publicidad en Internet, su costo de campaña se incrementara en $700000, del mismo modo por
+cada voto influenciado por publicidad en radio, su costo de campaña se incrementara en $200000,
+y finalmente, por cada voto influenciado por publicidad en televisión, su costo de campaña se
+incrementar en $600000.
+
+Las elecciones para representante del municipio “Premier” requieren una aplicación que les
+permita:
+1.	Votar por el candidato de su elección.
+2.	Calcular el costo de campaña de un candidato dependiendo de la influencia publicitaria
+de cada voto.
+3.	Vaciar todas las urnas de la votación.
+4.	Conocer el número total de votos.
+5.	Porcentaje de votos obtenidos por cada candidato.
+6.	Costo promedio de campaña en las elecciones*/
