@@ -37,12 +37,12 @@ public class Main {
                     switch (f) {
                         case 1:
                             System.out.println("Usted eligio la moneda de " + a);
-                            System.out.println("Ahora dime cuanta monedas de esta denominacion vas a " +
+                            System.out.println("Ahora dime cuantas monedas de esta denominacion vas a " +
                                     "ingresar");
                             h = teclado.nextInt();
 
                             i = a * h;
-                            System.out.println("usted ingreso " + g + "monedas de" + a);
+                            System.out.println("usted ingreso " + g + " monedas de" + a);
                             System.out.println("Las cuales suman " + "$" + i);
                             break;
                         case 2:
@@ -88,16 +88,16 @@ public class Main {
                     }
                     break;
                 case 2:
-                    System.out.println("tienes "+ h + "monedas de " + a);
-                    System.out.println("tienes "+ j + "monedas de " + b);
-                    System.out.println("tienes "+ l + "monedas de " + c);
-                    System.out.println("tienes "+ n + "monedas de " + d);
-                    System.out.println("tienes "+ p + "monedas de " + e);
+                    System.out.println("tienes "+ h + " monedas de " + a);
+                    System.out.println("tienes "+ j + " monedas de " + b);
+                    System.out.println("tienes "+ l + " monedas de " + c);
+                    System.out.println("tienes "+ n + " monedas de " + d);
+                    System.out.println("tienes "+ p + " monedas de " + e);
                     break;
                 case 3:
                     int r=0;
                     r=i+k+m+o+q;
-                    System.out.println("tienes "+ r + "ahorrados en tu marramito");
+                    System.out.println("tienes "+ r + " ahorrados en tu marranito");
 
                     break;
                 case 4:
