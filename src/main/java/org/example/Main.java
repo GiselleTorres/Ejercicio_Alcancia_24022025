@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0;
-        int t=0,u=0,v=0,w=0,x=0,y=0,z=0;
+        int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0;
+        int v=0,w=0,x=0,y=0,z=0;
+        double s=0,t=0,u=0;
         do {
             System.out.println("Bienvenido al puesto de votacion de nuestro municipio PREMIER");
             System.out.println("A continuacion te presentamos las opciones que puedes elegir");
@@ -115,18 +116,28 @@ public class Main {
                     System.out.println("El numero total de votos es de: "+ r);
                     break;
                 case 5:
-                    r=d+e+f+h+i+j+l+m+n;
-                    //candidato 1
-                    s=((d+e+f)/r)*100;
-                    System.out.print("El porcentaje de votos del candidato 1 es: " + s+"%");
-                    //candidato 1
-                    t=((j+i+h)/r)*100;
-                    System.out.print("El porcentaje de votos del candidato 2 es: " + t+"%");
-                    //candidato 1
-                    u=((l+m+n)/r)*100;
-                    System.out.print("El porcentaje de votos del candidato 3 es: " + u+"%");
+                    r = d+ e + f + h + i + j + l + m + n;
+
+                    // Verificar si el número total de votos es mayor que 0 para evitar división por cero
+                    if (r > 0) {
+                        // Candidato 1
+                        s = ((d + e + f) /(double)r) * 100;
+                        System.out.println("El porcentaje de votos del candidato 1 es: " + s + "%");
+
+                        // Candidato 2
+                        t = ((h + i + j) /(double)r) * 100;
+                        System.out.println("El porcentaje de votos del candidato 2 es: " + t + "%");
+
+                        // Candidato 3
+                        u = ((l + m + n) /(double)r) * 100;
+                        System.out.println("El porcentaje de votos del candidato 3 es: " + u + "%");
+                    } else {
+                        System.out.println("No hay votos registrados para calcular porcentajes.");
+                    }
                     break;
                 case 6:
+                    v=(o+p+q)/3;
+                    System.out.println("El costo promedio de las campañas fue de $" +v);
                     break;
             }
         }while (a!=5);
